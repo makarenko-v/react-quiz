@@ -41,5 +41,6 @@ module.exports = {
                 "tsx": "never",
             },
         ],
+        "import/no-absolute-path": "off",
     },
 };
