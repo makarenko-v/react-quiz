@@ -1,3 +1,5 @@
+import { Button } from "./shared/ui/button";
+
 interface FinishProps {
   points: number;
   totalPoints: number;
@@ -20,12 +22,12 @@ export function Finish({ points, totalPoints, onRestart }: FinishProps) {
   }
 
   return (
-    <div className="text-3xl text-center">
-      <span>{emoji}</span> You scored <strong>{points}</strong> out of{" "}
-      {totalPoints} ({percentage}%)
-      <button onClick={onRestart} type="button">
-        restart
-      </button>
+    <div className="text-3xl text-center flex flex-col gap-8">
+      <p>
+        <span>{emoji}</span> You scored <strong>{points}</strong> out of{" "}
+        {totalPoints} ({percentage}%)
+      </p>
+      <Button onClick={onRestart}>Restart</Button>
     </div>
   );
 }

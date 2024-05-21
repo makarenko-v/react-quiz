@@ -43,5 +43,6 @@ module.exports = {
     ],
     "import/no-absolute-path": "off",
     "react/no-unescaped-entities": "off",
+    "no-plusplus": "off",
   },
 };
